@@ -1,6 +1,5 @@
 apply plugin: 'idea'
 apply plugin: 'groovy'
-apply plugin: 'scala'
 
 repositories {
     mavenCentral()
@@ -12,4 +11,7 @@ dependencies {
             'com.twitter:scrooge-generator:3.0.4'
     )
     groovy localGroovy()
+    testCompile(
+            'org.spockframework:spock-core:0.7-groovy-1.8'
+    )
 }

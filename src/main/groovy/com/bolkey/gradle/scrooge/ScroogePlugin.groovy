@@ -6,7 +6,9 @@ import org.gradle.api.Project
 class ScroogePlugin implements Plugin<Project> {
 
     @Override
-    void apply(Project target) {
-        //To change body of implemented methods use File | Settings | File Templates.
+    void apply(Project project) {
+
+        project.extensions.create("scrooge", ScroogePluginExtension)
+
     }
 }
